@@ -1,0 +1,45 @@
+.infoContainer {
+  background: #EAEAEA;
+}
+
+.info {
+  padding: 41px 20px 80px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fbfbfb;
+  
+  color: #333333;
+  font-family: Roboto;
+  font-style: normal;
+
+  gap: 76px;
+
+  clip-path: polygon(0 90%,0 0, 100% 0, 100% 80%);
+}
+@media (max-width: 768px) {
+  .info { 
+    flex-direction: column;
+    gap:unset;
+  }
+}
+
+.info h3 {
+  font-size: 50px;
+  font-size: clamp(20px,2.5vw, 50px);
+  font-weight: 700;
+}
+
+.info p {
+  max-width: 504px;
+  font-family: Roboto;
+  font-size: 22px;
+  font-size: clamp(18px, 2.5vw, 22px);
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.info img {
+  width: clamp(13rem, 50vw, 26rem);
+  height: auto;
+}
