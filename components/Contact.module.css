@@ -1,0 +1,89 @@
+.contact {
+  font-family: Roboto;
+  background: #fbfbfb;
+  color: #333;
+  margin: 0 auto;
+  padding: 71px 20px 81px 20px;
+}
+
+.contact > div {
+  max-width: 1024px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.contact h3 {
+  font-size: clamp(20px,2.5vw, 50px);
+  font-weight: 700;
+  margin: 0;
+}
+
+.contact p {
+  font-size: clamp(18px, 2.5vw, 22px);
+}
+
+.contact button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+
+  width: 100%;
+  height: 60px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: clamp(18px, 2.5vw, 22px);
+  font-weight: 400;
+  background: #10ac84;
+  border-radius: 8px;
+}
+
+.contact form {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.fields {
+  display: flex;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .fields {
+    flex-direction: column;
+  }
+}
+
+.fields p {
+  display: flex;
+  width: 100%;
+  margin-right: 10px;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+.fields input {
+  height: 60px;
+  font-size: 18px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #cdcdcd;
+  padding: 0 15px;
+}
+
+.fields label {
+  font-size: 14px;
+  font-weight: 700;
+  position: absolute;
+  transform: translate(0px, -66px) scale(1);
+}
