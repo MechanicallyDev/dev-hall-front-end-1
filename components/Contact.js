@@ -9,15 +9,11 @@ export default function Contact() {
 
   function handleSubmit(e) {
     e.preventDefault()
-    if (name && telephone) {
-      alert(
-        `Obrigado pelo contato, ${name}.\nEntraremos em contato pelo telephone ${telephone} assim que possível.`
-      )
-      setName('')
-      setTelephone('')
-    } else {
-      alert('Por favor, preencha todos os campos')
-    }
+    alert(
+      `Obrigado pelo contato, ${name}.\nEntraremos em contato pelo telephone ${telephone} assim que possível.`
+    )
+    setName('')
+    setTelephone('')
   }
 
   return (
@@ -25,7 +21,7 @@ export default function Contact() {
       <div>
         <h3>Mande um oi, ligamos para você!</h3>
         <p>Preencha seus dados para que a gente possa entrar em contato.</p>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className={styles.fields}>
             <p>
               <label>Nome Completo</label>
@@ -47,7 +43,7 @@ export default function Contact() {
               />
             </p>
             <p>
-              <button onClick={handleSubmit}>Peça uma reunião</button>
+              <button type='submit'>Peça uma reunião</button>
             </p>
           </div>
         </form>
